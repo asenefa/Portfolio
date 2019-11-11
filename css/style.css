@@ -1,0 +1,224 @@
+/* specification */
+body{
+    color: #404040;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+ul, li{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: #404040;
+}
+a:hover{
+    text-decoration: none;
+    color: #404040;
+}
+/* header */
+.title_hr{
+    display: none;
+}
+.title__name{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 36.5px;
+    margin: 20px 0 0;
+}
+.burger-menu{
+    visibility: hidden;
+}
+.menu{
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+.menu__item{
+    text-transform: uppercase;
+    padding: 50px 15px 0;
+}
+li:hover{
+    background: #d45e5e;
+    color: white;
+}
+.guotes{
+    /* margin-top: 40px; */
+    text-align: center;
+    
+}
+
+.guotes__guotes{
+    font-size: 100px;
+    color: #dfdfdf;
+    quotes: "\2018" "\2018";
+
+
+}
+.guotes__text{
+    font-style: italic;
+    font-size: 22.5px;
+    top: 15px;
+    margin-top: -60px;
+}
+
+.image hr{
+    margin: 0 0 3px;
+}
+.image{
+    text-align: center;
+	overflow:hidden; /* this is important */
+}
+.image img{
+    margin:-35px -3px 0;
+}
+
+/* section */
+.portfolio{
+    font-size: 22.5px;
+    font-style: italic;
+    margin: 15px 0 120px;
+}
+.imgPortfolio{
+    margin: 20px 0;
+    /* padding: 20px; */
+}
+/* footer */
+.footer{
+    background: #d45e5e;
+    color: white;
+}
+.fa{
+    font-size: 50px;
+    padding-right: 30px;
+}
+
+.aboutme__name{
+    font-style: italic;
+    font-size: 24.5px;
+
+}
+.aboutme__photo{
+    margin: -50px 0 50px;
+    border: 8px solid white;
+    /* width: 10%; */
+}
+.abotme__info{
+    padding: 20px 0 0 30px;
+}
+.aboutme__name{
+    margin: 0;
+}
+.aboutme__social{
+    padding-top: 30px;
+    margin-right: 15%;
+}
+.aboutme__social__md{
+    visibility: hidden;
+}
+.aboutme__text{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12.5px;
+    margin-right: 15%;
+}
+.skills__title{
+    font-size: 24.5px;
+    margin-bottom: 40px;  
+    margin-left: 10px;
+}
+.skills{
+    margin-top: 60px;
+}
+.black{
+    background-color: #282828;
+    width: 100px;
+    height: 10px;
+    margin: 10px 0;
+}
+.pink{
+    background: #e27878;
+    width: 100px;
+    height: 10px;
+    margin: 10px 0;
+
+}
+.slills__status p{
+    margin: 0 10px 0;
+}
+
+/* media-queries */
+@media screen and (max-width: 992px){
+    .aboutme__social, .aboutme__text {
+        margin-right: 0;
+    }
+    .slills__status{
+        width: 80%;
+    }
+    .black, .pink{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 767px){
+    .title_hr{
+        display: block;
+        margin: 0;
+        background-color: white;
+    }
+    .menu__item{
+        /* display: block; */
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .aboutme__social{
+        /* visibility: hidden; */
+        width: 0;
+        overflow: hidden;
+    }
+    .aboutme__social__md{
+        visibility: visible;
+    }
+    .aboutme__social__md p{
+        padding: 10px 80px 0 0;
+    }
+    .fa{
+        padding-right: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px){
+    .imgPortfolio {
+       width: 100%;
+    }
+    .title_hr{
+        visibility: hidden;
+    }
+    .menu{
+        /* visibility: hidden; */
+        background: #d45e5e;
+        text-align: end;
+
+    }
+    .burger-menu{
+        visibility: visible;
+        text-align: end;
+        margin: 20px 0 0;
+    }
+    .burger-menu__close{
+        visibility: hidden;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    ul, li{
+        display: flex;
+        flex-flow: column;
+        padding: 0;
+        margin: 0;
+    }
+}
