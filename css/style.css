@@ -18,6 +18,11 @@ a:hover{
     text-decoration: none;
     color: #404040;
 }
+.fa-close{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
 /* header */
 .title_hr{
     display: none;
@@ -28,12 +33,9 @@ a:hover{
     font-size: 36.5px;
     margin: 20px 0 0;
 }
-.burger-menu{
-    visibility: hidden;
-}
 .menu{
     font-family: 'Roboto Condensed', sans-serif;
-
+    /* margin: -35px; */
 }
 .menu__item{
     text-transform: uppercase;
@@ -160,7 +162,9 @@ li:hover{
     }
 
 }
-
+/* .glyphicon{
+    display: none;
+} */
 
 @media screen and (max-width: 767px){
     .title_hr{
@@ -199,26 +203,42 @@ li:hover{
     .title_hr{
         visibility: hidden;
     }
-    .menu{
-        /* visibility: hidden; */
-        background: #d45e5e;
-        text-align: end;
-
-    }
-    .burger-menu{
-        visibility: visible;
-        text-align: end;
-        margin: 20px 0 0;
-    }
-    .burger-menu__close{
-        visibility: hidden;
+    .fa, .glyphicon{
         font-size: 24px;
-        font-weight: 500;
     }
+
+    a{
+        text-align: end;
+    }
+ 
     ul, li{
         display: flex;
         flex-flow: column;
         padding: 0;
-        margin: 0;
+        margin: 0;        
+    } 
+    .glyphicon{
+        position: fixed;
+        z-index: 20;
+        right: 2%;
+        padding: 20px  0 0 ;
+
     }
+    .burger-menu__nav{
+        background: #e27878;
+        position: fixed;
+        z-index: 20;
+        right: 0;
+
+    }
+    .fa-close{
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+
+    
+
+
+
 }
